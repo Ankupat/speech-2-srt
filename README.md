@@ -20,6 +20,18 @@ options:
   --base_path			BASE_PATH
   --file_name			FILE_NAME
   ```
+ # Example
+ #### usecase 1: If you want to create the SRT subs from video
+ ```code
+ ./video2srt.py --base_path="/Users/abc/Documents/github/speech-2-srt/test_content/" --file_name="test.mp4"
+ ```
+ 
+ #### usecase 2: If you already have audio file (mp3) in the google cloud storage
+ ```code
+ ./video2srt.py --storage_uri=""gs://test/test.mp3""
+ ```
 
 # Notes
-  - Change the Google Cloud Folder path as required in the script
+  - Change the Google Cloud Folder path as required in the script.
+  - The file base path can be hardcoded as default in the script to avoid defining at the command line.
+  - The SRT and TXT files will be store at the same base path.
