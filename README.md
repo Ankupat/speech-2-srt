@@ -2,7 +2,10 @@
 The scripts converts video to mp3 audio and converts it to SRT subtitles using Google TTS engine.
 
 # Pre-requisites
-Install all the dependancy from the requirements.txt
+Install all the dependancy from the requirements.txt. The code is compatible with python3 onwards.
+```code
+python3 -m pip install -r requirements.txt
+```
 
 # Usage
 ```code
@@ -23,12 +26,12 @@ options:
  # Example
  #### usecase 1: If you want to create the SRT subs from video
  ```code
- ./video2srt.py --base_path="/Users/abc/Documents/github/speech-2-srt/test_content/" --file_name="test.mp4"
+ python3 video2srt.py --base_path="/Users/abc/Documents/github/speech-2-srt/test_content/" --file_name="test.mp4"
  ```
  
  #### usecase 2: If you already have audio file (mp3) in the google cloud storage
  ```code
- ./video2srt.py --storage_uri="gs://test/test.mp3"
+ python3 video2srt.py --storage_uri="gs://test/test.mp3"
  ```
 
 # Notes
