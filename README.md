@@ -28,7 +28,7 @@ options:
  
  #### usecase 2: If you already have audio file (mp3) in the google cloud storage
  ```code
- ./video2srt.py --storage_uri=""gs://test/test.mp3""
+ ./video2srt.py --storage_uri="gs://test/test.mp3"
  ```
 
 # Notes
