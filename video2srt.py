@@ -177,7 +177,6 @@ def main():
         type=str,
     )
     args = parser.parse_args()
-
     if not args.storage_uri:
         file_path = mp4_to_mp3(args)
         storage_uri = upload_to_cloud(file_path)
