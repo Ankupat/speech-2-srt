@@ -38,3 +38,8 @@ options:
   - Change the Google Cloud Folder path as required in the script.
   - The file base path can be hardcoded as default in the script to avoid defining at the command line.
   - The SRT and TXT files will be store at the same base path.
+  
+# Adding Google Authentication
+  - First go to your Google Cloud Account and create the "Service Account". (more detail @ https://cloud.google.com/appengine/docs/standard/go/access-control#service_account)
+  - Once you download the json access key (I store the json in ~/.ssh/)
+  - export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json
